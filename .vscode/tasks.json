@@ -1,0 +1,24 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Sync upstream on open",
+      "type": "shell",
+      "command": "git",
+      "args": [
+        "pull",
+        "origin",
+        "main"
+      ],
+      "runOptions": {
+        "runOn": "folderOpen"
+      },
+      "presentation": {
+        "echo": true,
+        "reveal": "silent",
+        "panel": "shared"
+      },
+      "problemMatcher": []
+    }
+  ]
+}
