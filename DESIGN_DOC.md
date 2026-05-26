@@ -42,17 +42,10 @@
 | `timesfm-forecasting` | 时序预测 | 基于 Transformer 的时间序列预测 |
 | `torch-geometric` | 图神经网络 | 图卷积、图注意力、图分类/回归 |
 | `transformers` (HuggingFace) | NLP/CV | 预训练模型微调、文本/图像分类 |
-| `deepchem` | 化学 ML | 分子属性预测、虚拟筛选 |
 | `umap-learn` | 降维可视化 | 非线性降维、高维数据可视化 |
 | `pymc` | 概率编程 | 贝叶斯推断、MCMC 采样 |
-| `qiskit` | 量子 ML | 量子电路、量子分类器 |
-| `networkx` + `stat` | 图分析 | 网络分析、统计建模 |
+| `networkx` | 图分析 | 网络分析、图算法 |
 | `statsmodels` | 统计模型 | 回归分析、时间序列统计模型 |
-| `geniml` | 基因组 ML | 单细胞数据机器学习 |
-| `pathml` | 病理学 ML | 数字病理图像分析 |
-| `diffdock` | 分子对接 | 蛋白质-配体对接预测 |
-| `esm` | 蛋白质语言模型 | 蛋白质序列表示学习 |
-| `cirq` | 量子计算 | 量子机器学习基础 |
 
 ### 2.2 Skill 结构解析
 
@@ -468,7 +461,7 @@ async def execute_node(node: Node, inputs: dict) -> dict:
 ### Phase 3：扩展与 polish（2-3 周）
 
 - [ ] 添加 `pytorch-lightning`、`transformers` 深度学习插件
-- [ ] 添加 `deepchem`、`esm` 等科学领域插件
+- [ ] 添加 AutoML 插件（如 `auto-sklearn`、`TPOT`）
 - [ ] 实现 Model Manager（模型保存、对比、导出 ONNX）
 - [ ] 实验追踪系统（本地 SQLite 存储）
 - [ ] 打包发布（PyInstaller → Windows/macOS/Linux 安装包）
